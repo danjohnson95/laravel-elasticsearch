@@ -331,6 +331,18 @@ class QueryBuilder extends BaseBuilder
         return $this;
     }
 
+    public function useAggregation(Aggregation $aggregation)
+    {
+        $this->aggregations[] = [
+            'key' => $aggregation->getName(),
+            'type' => $aggregation->getType(),
+            'args' => $aggregation->getOptions(),
+            'aggregations' => null
+        ];
+
+        return $this;
+    }
+
     /**
      * @param  string  $column
      * @param  int  $direction
