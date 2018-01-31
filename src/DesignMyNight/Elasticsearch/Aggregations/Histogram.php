@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignMyNight\Elasticsearch;
+namespace DesignMyNight\Elasticsearch\Aggregations;
 
 use DesignMyNight\Elasticsearch\Exceptions\IntervalNotSpecifiedException;
 

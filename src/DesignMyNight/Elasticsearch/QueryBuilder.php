@@ -3,6 +3,7 @@
 namespace DesignMyNight\Elasticsearch;
 
 use Closure;
+use DesignMyNight\ElasticSearch\Aggregations\Aggregation;
 use Illuminate\Database\Query\Builder as BaseBuilder;
 use Illuminate\Support\Str;
 
