@@ -27,5 +27,8 @@
                 "DesignMyNight\\Elasticsearch\\ElasticsearchServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
     }
 }
