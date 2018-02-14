@@ -333,12 +333,7 @@ class QueryBuilder extends BaseBuilder
 
     public function useAggregation(Aggregation $aggregation)
     {
-        $this->aggregations[] = [
-            'key' => $aggregation->getName(),
-            'type' => $aggregation->getType(),
-            'args' => $aggregation->getOptions(),
-            'aggregations' => null
-        ];
+        $this->aggregations[] = $aggregation->getAggregation();
 
         return $this;
     }

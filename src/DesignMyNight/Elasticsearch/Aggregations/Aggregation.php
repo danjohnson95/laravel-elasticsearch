@@ -66,9 +66,10 @@ abstract class Aggregation implements AggregationContract
     public function getAggregation(): array
     {
         return [
-            $this->getName(),
-            $this->getType(),
-            $this->getOptions()
+            'key' => $this->getName(),
+            'type' => $this->getType(),
+            'args' => $this->getOptions(),
+            'aggregations' => $this->getNestedAggregations()
         ];
     }
 }
